@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta http-equiv="X-UA-Compatible" content="IE=11" >
+        <script src="https://cdn.plot.ly/plotly-2.4.2.min.js"></script>
+        <link href="style.css" rel="stylesheet" type="text/css" />
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width">
+        <title>covid_visualizations</title>
+    </head>
+    <body>
+        <script src="script.js"></script>
+        <ul>
+        <ul>
+        <li><a href="/index.html">Home</a></li>
+        <li><a href="/countrydeaths.html">Country Deaths</a></li>
+        <li><a href="/uspiecharts.html">US State Stats</a></li>
+        <li><a href="/usmap.html">US Vaccination Map (WIP)</a></li>
+    </ul>
+    <div id="b25ab1e2-c972-4bfe-b2ad-9c74469f6894" style="width: 600px; height: 600px;"><!-- Plotly chart will be drawn inside this DIV --></div>
+<script type="text/javascript">
+
+            var renderPlotly_b25ab1e2c9724bfeb2ad9c74469f6894 = function() {
+            var fsharpPlotlyRequire = requirejs.config({context:'fsharp-plotly',paths:{plotly:'https://cdn.plot.ly/plotly-2.4.2.min'}}) || require;
+            fsharpPlotlyRequire(['plotly'], function(Plotly) {
+
+            var data = [{"type":"pie","values":[2156065,0,121079782],"labels":["Deaths","Confirmed","Total Cases"],"marker":{},"text":["Deaths","Confirmed","Total Cases"]}];
+            var layout = {};
+            var config = {};
+            Plotly.newPlot('b25ab1e2-c972-4bfe-b2ad-9c74469f6894', data, layout, config);
+});
+            };
+            if ((typeof(requirejs) !==  typeof(Function)) || (typeof(requirejs.config) !== typeof(Function))) {
+                var script = document.createElement("script");
+                script.setAttribute("src", "https://cdnjs.cloudflare.com/ajax/libs/require.js/2.3.6/require.min.js");
+                script.onload = function(){
+                    renderPlotly_b25ab1e2c9724bfeb2ad9c74469f6894();
+                };
+                document.getElementsByTagName("head")[0].appendChild(script);
+            }
+            else {
+                renderPlotly_b25ab1e2c9724bfeb2ad9c74469f6894();
+            }
+</script>
+    <select name="States" id="statelist" onchange="location=this.value;">
+        <option value="/uspiecharts.html">None</option>
+        <option value="/piecharts/nycpie.html">New York</option>
+        <option value="/piecharts/txpie.html">Texas</option>
+        <option value="/piecharts/flpie.html">Florida</option>
+        <option value="/piecharts/mapie.html">Massachusetts</option>
+    </body>
+</html>
