@@ -5,4 +5,4 @@ Site:
   * https://covidvisualizations.buggingthecode.repl.co
 
 
-(There is a really weird problem where F# won't appear in the language percentages. Don't know how to fix that)
+(There is a really weird problem where F# won't appear in the language percentages. Don't know how to fix that. You can go look inside `FSharp-Scripts` to view the F# codes.)
