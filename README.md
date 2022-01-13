@@ -5,4 +5,4 @@ Site:
   * https://covidvisualizations.buggingthecode.repl.co
 
 
-(There is a really weird problem where F# won't appear in the language percentages. Don't know how to fix that. You can go look inside `F#-Scripts` to view the F# codes.)
+(`usmaps.html` and `bar_charts_data.csv` were deleted since the file size was too big)
