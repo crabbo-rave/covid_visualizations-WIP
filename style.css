@@ -19,3 +19,24 @@
         width: 1170px;
     }
 }
+
+h1 {
+    height: 10em;
+    display: flex;
+    align-items: center;
+}
+
+body {
+    background-color: #C7E4EE;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+a:link {
+  text-decoration: none;
+    color: #b51a00;
+}
+
+a:visited {
+  text-decoration: none;
+    color: #b51a00;
+}
