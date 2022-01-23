@@ -68,4 +68,4 @@ Chart.ChoroplethMap(
     )
 )
 |> Chart.withSize (800.,800.)
-|> Chart.show //used Chart.saveHtmlAs to generate the html code.
+|> Chart.show 

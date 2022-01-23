@@ -25,5 +25,5 @@ let countryDeaths countryName =
 let deaths =
     countryNames
     |> Seq.map countryDeaths
-let column = Chart.Column(deaths,countryNames) |> Chart.show //used Chart.saveHtmlAs to generate the html code.
+let column = Chart.Column(deaths,countryNames) |> Chart.show 
 

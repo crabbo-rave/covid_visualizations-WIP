@@ -40,4 +40,4 @@ let labels = ["Deaths"; "Confirmed"; "Total Cases"]
 
 let pie =
     Chart.Pie(values, labels) 
-    |> Chart.show //used Chart.saveHtmlAs to generate the html code.
+    |> Chart.show 
